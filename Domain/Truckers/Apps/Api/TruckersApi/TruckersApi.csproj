@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.0" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.26.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+  </ItemGroup>
+  <PropertyGroup>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <UserSecretsId>dd2817d3-0548-4f81-b1d6-7046f23a2631</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\Common\Common.CosmosDbServices\Common.CosmosDbServices.csproj" />
+    <ProjectReference Include="..\..\..\..\..\Common\Domain.Common\Domain.Common.csproj" />
+    <ProjectReference Include="..\..\..\EasyLoad.Truckers.Domain.Common\EasyLoad.Truckers.Domain.Common.csproj" />
+    <ProjectReference Include="..\..\..\EasyLoad.Truckers.Ioc\EasyLoad.Truckers.Ioc.csproj" />
+    <ProjectReference Include="..\TruckersApi.Queries.CosmosDbServices\TruckersApi.Queries.CosmosDbServices.csproj" />
+    <ProjectReference Include="..\TruckersApi.Queries.Infrastructure\TruckersApi.Queries.Infrastructure.csproj" />
+    <ProjectReference Include="..\TruckersApi.Queries\TruckersApi.Queries.csproj" />
+  </ItemGroup>
+
+</Project>

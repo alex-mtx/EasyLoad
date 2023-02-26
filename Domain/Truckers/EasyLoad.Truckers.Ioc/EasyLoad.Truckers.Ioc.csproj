@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EasyLoad.Truckers.Domain.Common\EasyLoad.Truckers.Domain.Common.csproj" />
+    <ProjectReference Include="..\EasyLoad.Truckers.Domain\EasyLoad.Truckers.Domain.csproj" />
+    <ProjectReference Include="..\EasyLoad.Truckers.Infrastructure.CosmosDbServices\EasyLoad.Truckers.Infrastructure.CosmosDbServices.csproj" />
+    <ProjectReference Include="..\EasyLoad.Truckers.Infrastructure\EasyLoad.Truckers.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
